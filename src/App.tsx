@@ -2,8 +2,10 @@ import { useState } from "react";
 import { BlockTable } from "./components/BlockTable";
 import { InputNumber, Layout } from "antd";
 import { table } from "./logic/searchLogic";
+import { Header } from "./components/Header";
+import { Sider } from "./components/Sider";
 
-const { Header, Content, Sider } = Layout;
+const { Content } = Layout;
 
 function App() {
     const [size, setSize] = useState<number | null>(4);
@@ -11,9 +13,9 @@ function App() {
     console.log("testing the table gen", currentTable);
     return (
         <Layout style={{ minHeight: "100vh" }}>
-            <Header> test </Header>
+            <Header />
             <Layout>
-                <Sider>left sidebar</Sider>
+                <Sider />
                 <Content>
                     <div>
                         <BlockTable
