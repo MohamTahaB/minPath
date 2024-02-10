@@ -5,7 +5,7 @@ const {Title} = Typography
 
 const Header = () => {
     return (
-        <AntdHeader style={{ display: "flex", alignItems: "center" }}>
+        <AntdHeader style={{ display: "flex", alignItems: "center", justifyContent:'center' }}>
             <Title style={{ color: "white" }}>Min Path</Title>
         </AntdHeader>
     );
